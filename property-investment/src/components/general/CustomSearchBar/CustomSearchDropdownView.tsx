@@ -1,15 +1,15 @@
+import styles from '@/styles/General.module.css'
 import { useEffect, useState } from "react";
 import { ListItem } from "@mui/material";
 import Condition from "../Condition";
 
 interface SearchDropdownProps {
-  className?: string;
   options?: string[];
   onItemSelect: (value: string) => void;
   reset: boolean;
 }
 
-const CustomSearchDropdownView = ({ className, options = [], onItemSelect, reset }: SearchDropdownProps): JSX.Element => {
+const CustomSearchDropdownView = ({ options = [], onItemSelect, reset }: SearchDropdownProps): JSX.Element => {
   const [closeMenu, setCloseMenu] = useState(true)
 
   useEffect(() => {
@@ -18,15 +18,11 @@ const CustomSearchDropdownView = ({ className, options = [], onItemSelect, reset
 
   return (
     <Condition condition={!closeMenu}>
-      <div className={className}>
+      <div className={styles.dropDown}>
         {options?.map(item => 
           <ListItem 
             key={item} 
-            style={{ 
-              justifyContent: 'flex-start', 
-              padding: 10,
-              fontSize: 12
-            }}
+            className={styles.dropDownListItem}
             onClick={(): void => {
               onItemSelect(item);
               setCloseMenu(true);

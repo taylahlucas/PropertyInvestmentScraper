@@ -1,4 +1,4 @@
-import styles from '@/styles/Home.module.css'
+import styles from '@/styles/General.module.css'
 import { IconButton, TextField } from "@mui/material";
 import CancelIcon from '@mui/icons-material/Cancel'
 import SearchDropdownView from './CustomSearchDropdownView';
@@ -40,7 +40,6 @@ const CustomSearchBar = ({
         }}
       />
       <SearchDropdownView
-        className={styles.test}
         options={options} 
         onItemSelect={onItemSelect}
         reset={value.length > 0}
