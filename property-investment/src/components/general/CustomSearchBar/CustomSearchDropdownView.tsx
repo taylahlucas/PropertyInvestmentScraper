@@ -18,11 +18,11 @@ const CustomSearchDropdownView = ({ options = [], onItemSelect, reset }: SearchD
 
   return (
     <Condition condition={!closeMenu}>
-      <div className={styles.dropDown}>
+      <div className={styles.searchDropDown}>
         {options?.map(item => 
           <ListItem 
             key={item} 
-            className={styles.dropDownListItem}
+            className={styles.searchListItem}
             onClick={(): void => {
               onItemSelect(item);
               setCloseMenu(true);

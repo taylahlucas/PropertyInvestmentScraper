@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import MenuOpenBar from './general/MenuOpenBar';
-import Condition from './general/Condition';
+import MenuOpenBar from '@/components/general/MenuOpenBar';
+import Condition from '@/components/general/Condition';
 
 const SavedResults = (): JSX.Element => {
   const [menuOpen, setMenuOpen] = useState(false)
