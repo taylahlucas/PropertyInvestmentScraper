@@ -1,12 +1,44 @@
+.headerContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.header {
+  margin-left: 100px;
+  right: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #2B2234;
+}
+
+.searchBarContainer {
+  margin-left: 200px;
+}
+
+.searchBar {
+  background-color: white;
+  margin: 10px;
+  padding-left: 20px;
+}
+
+.searchBarField {
+  border-radius: 2;
+  width: 400
+}
 
 .dropDown {
-  background-color: #F3F1EE;
+  background-color: white;
   max-height: 300px;
-  width: 300px;
+  width: 400px;
   position: absolute;
   overflow: scroll;
   z-index: 3;
   border-radius: 2%;
+  margin-left: 10px;
+  margin-top: -8px;
 }
 
 .dropDownListItem {
@@ -14,3 +46,12 @@
   padding: 10;
   font-size: 12;
 }
+
+/* 
+  white: F7F8FB
+  dark blue: 313956
+  grey: B9BEC6
+  dark grey: 4B536E
+  brown: 989072
+  purple: 5458BB
+*/

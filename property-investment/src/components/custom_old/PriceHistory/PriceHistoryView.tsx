@@ -1,4 +1,4 @@
-import { PriceHistoryData } from '../../utils/interfaces';
+import { PriceHistoryData } from '../../../utils/interfaces';
 
 interface PriceHistoryViewProps {
   results: PriceHistoryData | undefined;

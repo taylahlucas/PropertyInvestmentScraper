@@ -1,4 +1,4 @@
-import styles from '@/styles/General.module.css'
+import styles from '@/styles/General.module.css';
 import { IconButton, TextField } from "@mui/material";
 import CancelIcon from '@mui/icons-material/Cancel'
 import SearchDropdownView from './CustomSearchDropdownView';
@@ -19,22 +19,26 @@ const CustomSearchBar = ({
   onItemSelect 
 }: CustomSearchBarProps): JSX.Element => {
   return (
-    <form>
+    <form className={styles.searchBarContainer}>
       <TextField
+        variant='standard'
+        sx={{ borderRadius: 2, width: 400 }}
         placeholder={placeholder}
         value={value}
+        className={styles.searchBar}
         onChange={(event): void => {
           setSearchValue(event.target.value ?? '')
         }}
         size={'small'}
         InputProps={{
+          disableUnderline: true,
           endAdornment: (
             <IconButton 
               type="reset" 
               aria-label="cancel"
               onClick={() => setSearchValue('')
             }>
-              <CancelIcon style={{ fill: "darkblue" }} />
+              <CancelIcon />
             </IconButton>
           )
         }}

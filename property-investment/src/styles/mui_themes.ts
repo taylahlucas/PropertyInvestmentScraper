@@ -1,29 +1,13 @@
 import { createTheme } from '@mui/material'
 
+// TODO: Remove this & move to css
 const baseTheme = createTheme({
   palette: {
     background: {
-        default: '#BCC6CA'
+        default: '#F5F7FB'
     },
-  },
-  components: {
-    MuiTextField: {
-      styleOverrides: {
-        root: {
-          width: 250
-        }
-      }
-    },
-    MuiListItem: {
-      styleOverrides: {
-        root: {
-          '&:hover': {
-            backgroundColor: 'lightGrey'
-          }
-        }
-      }
-    }
   }
 });
 
 export default baseTheme;
+

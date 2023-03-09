@@ -6,7 +6,7 @@ import { calculateAverage } from '../../../data/functions';
 import { emptyRentalPriceData, valueArray } from '../../../utils/constants';
 import RentalPrices from '../RentalPrices/RentalPrices';
 import CustomSelect from '../../general/CustomSelect';
-import PriceHistoryView from '../../PriceHistory/PriceHistoryView';
+import PriceHistoryView from '../PriceHistory/PriceHistoryView';
 
 interface PriceInformationViewProps {
   results: RentPriceData | undefined;
