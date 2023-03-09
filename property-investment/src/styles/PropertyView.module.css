@@ -1,0 +1,60 @@
+.propertyViewContainer {
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 100vh;
+  height: 100vh;
+}
+
+.propertyCardContainer {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  height: 200px;
+  border-radius: 2ch;
+  margin-top: 10px;
+}
+
+.contentContainer {
+  margin-left: 20px;
+  padding-top: 15px;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: row;
+  width: 210px;
+  height: 140px;
+  overflow-x: scroll;
+  border-radius: 1ch;
+}
+
+.price {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.dropdownDetails {
+  background-color: white;
+  width: 550px;
+  height: 200px;
+  border-radius: 1ch;
+  margin-top: 10px;
+  left: 0;
+  padding: 10px;
+}
+
+.detailsContainer {
+  height: 150px;
+  width: 300px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.details {
+  font-weight: 300;
+  border-bottom: 1px solid rgb(212, 212, 212);
+  padding: 5px;
+  list-style-type: none;
+  margin-right: 30px;
+}

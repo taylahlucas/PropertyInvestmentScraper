@@ -12,7 +12,7 @@ const HeaderFilter = () => {
       header={
         <CustomButton
           variant='contained'
-          onClick={() => setFilterOpen(!filterOpen)}
+          onClick={(): void => setFilterOpen(!filterOpen)}
           iconType='filter'
           children="Filter"
         />

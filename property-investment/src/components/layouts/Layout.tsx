@@ -5,12 +5,13 @@ interface LayoutProps {
   children?: any;
 }
 
-const Layout = ({ headerChildren }: LayoutProps) => {
+const Layout = ({ headerChildren, children }: LayoutProps) => {
   return (
     <>
       <Header>
         {headerChildren}
       </Header>
+      {children}
     </>  
   );
 };

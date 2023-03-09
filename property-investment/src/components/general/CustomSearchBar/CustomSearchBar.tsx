@@ -14,53 +14,51 @@ interface CustomSearchBarProps {
 }
 
 const CustomSearchBar = ({ 
-  placeholder = 'Search', 
+  placeholder = 'Search suburbs...', 
   value,
   setSearchValue, 
   options, 
   onItemSelect 
 }: CustomSearchBarProps): JSX.Element => {
   return (
-    // <div className={styles.searchBarContainer}>
-      <DropDown 
-        header={
-          <form className={styles.searchBarContainer}>
-            <TextField
-              variant='standard'
-              sx={{ borderRadius: 2, width: 400 }}
-              placeholder={placeholder}
-              value={value}
-              className={styles.searchBar}
-              onChange={(event): void => {
-                setSearchValue(event.target.value ?? '')
-              }}
-              size={'small'}
-              InputProps={{
-                disableUnderline: true,
-                endAdornment: (
-                  <IconButton 
-                    type="reset" 
-                    aria-label="cancel"
-                    onClick={() => setSearchValue('')
-                  }>
-                    <CancelIcon />
-                  </IconButton>
-                )
-              }}
-            />
-          </form>
-        }
-        view={
-          <div className={styles.searchBarContainer}>
-            <SearchDropdownView
-              options={options} 
-              onItemSelect={onItemSelect}
-              reset={value.length > 0}
-            />
-          </div>
-        }
-      />
-    // </div>
+    <DropDown 
+      header={
+        <form className={styles.searchBarContainer}>
+          <TextField
+            variant='standard'
+            sx={{ borderRadius: 2, width: 400 }}
+            placeholder={placeholder}
+            value={value}
+            className={styles.searchBar}
+            onChange={(event): void => {
+              setSearchValue(event.target.value ?? '')
+            }}
+            size={'small'}
+            InputProps={{
+              disableUnderline: true,
+              endAdornment: (
+                <IconButton 
+                  type="reset" 
+                  aria-label="cancel"
+                  onClick={() => setSearchValue('')
+                }>
+                  <CancelIcon />
+                </IconButton>
+              )
+            }}
+          />
+        </form>
+      }
+      view={
+        <div className={styles.searchBarContainer}>
+          <SearchDropdownView
+            options={options} 
+            onItemSelect={onItemSelect}
+            reset={value.length > 0}
+          />
+        </div>
+      }
+    />
   );
 };
 

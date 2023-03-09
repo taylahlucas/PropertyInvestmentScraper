@@ -1,10 +1,10 @@
 
 import styles from '@/styles/General.module.css';
 import { useState } from 'react';
-import CustomSearchBar from '../../general/CustomSearchBar/CustomSearchBar';
-import { filterSearchData, searchAddressData } from '../../../data/functions';
-import { SearchFormData } from '../../../utils/interfaces';
-import HeaderFilter from './HeaderFilter/HeaderFilter';
+import CustomSearchBar from '../../../general/CustomSearchBar/CustomSearchBar';
+import { filterSearchData, searchAddressData } from '../../../../data/functions';
+import { SearchFormData } from '../../../../utils/interfaces';
+import HeaderFilter from './HeaderFilter';
 
 const PropertyDashboardHeader = () => {
   const [searchValue, setSearchValue] = useState('')

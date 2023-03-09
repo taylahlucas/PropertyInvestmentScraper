@@ -27,10 +27,16 @@ export interface PropertyItem {
   href: string;
   extra_details: string[];
   extra_description: string;
-  stations: string[];
-  schools: string[];
+  stations: LocationData[];
+  schools: LocationData[];
   current_date: string;
 };
+
+export interface LocationData {
+  name: string;
+  location_type: string;
+  distance: string;
+}
 
 interface PropertyCountType {
   no_beds: number;
