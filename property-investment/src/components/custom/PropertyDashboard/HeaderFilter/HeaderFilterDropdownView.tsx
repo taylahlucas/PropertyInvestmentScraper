@@ -1,5 +1,6 @@
-import Condition from '@/components/general/Condition';
 import styles from '@/styles/General.module.css';
+import Condition from '@/components/general/Condition';
+import SearchPropertiesForm from '../../SearchPropertiesForm/SearchPropertiesForm';
 
 interface HeaderFilterDropDownViewProps {
   open: boolean;
@@ -9,7 +10,7 @@ const HeaderFilterDropDownView = ({ open = false }: HeaderFilterDropDownViewProp
   return (
     <Condition condition={open}>
       <div className={styles.headerFilterContainer}>
-        
+        <SearchPropertiesForm />
       </div>
     </Condition>
   );

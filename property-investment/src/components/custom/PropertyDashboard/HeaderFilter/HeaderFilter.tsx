@@ -14,7 +14,7 @@ const HeaderFilter = () => {
           variant='contained'
           onClick={() => setFilterOpen(!filterOpen)}
           iconType='filter'
-          title="Filter"
+          children="Filter"
         />
       }
       view={

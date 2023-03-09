@@ -1,15 +1,10 @@
-import { PropertyItem, RentPriceData } from './interfaces';
+import { PropertyItem, RentPriceData, ItemProps } from './interfaces';
 
-export interface ItemProps {
-  label: string;
-  value: string | number;
-}
-
+export const formGapHeight: number = 15;
 export const valueArray: ItemProps[] = [0, 1, 2, 3, 4, 5].map((index: number) => ({
   label: index.toString(),
   value: index
 }))
-
 
 export const areas: string[] = [];
 

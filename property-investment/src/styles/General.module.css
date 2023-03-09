@@ -16,6 +16,7 @@
 
 .searchBarContainer {
   display: flex;
+  margin-left: 100px;
 }
 
 .searchBar {
@@ -53,6 +54,7 @@
   min-width: 150px;
   text-align: center;
 }
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -61,12 +63,20 @@
 .headerFilterContainer {
   display: flex;
   position: absolute;
-  background-color: white;
+  background-color: #E6E9F0;
   width: 300px;
-  height: 200px;
+  height: 300px;
   z-index: 3;
   border-radius: 2%;
-  margin-top: 2px;
+  margin-top: 4px;
+}
+
+.formGroup {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* 
@@ -76,4 +86,5 @@
   dark grey: 4B536E
   brown: 989072
   purple: 5458BB
+  170, 174, 200
 */

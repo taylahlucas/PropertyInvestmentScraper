@@ -1,3 +1,8 @@
+export interface ItemProps {
+  label: string;
+  value: string | number;
+}
+
 export interface CitiesProps {
   name: string;
   towns: string[];
