@@ -29,7 +29,7 @@ const PropertyCard = ({ property }: PropertyCardProps) => {
       view={
         <PropertyDetails
           open={detailsOpen}
-          details={property.extra_details} features={property.features} 
+          property={property}
         />
       }
     />

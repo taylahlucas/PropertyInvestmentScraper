@@ -9,7 +9,7 @@ interface PropertiesViewProps {
 const PropertiesView = ({ results }: PropertiesViewProps) => {
   return (
     <div className={styles.propertyViewContainer}>
-      {results?.map(property => <PropertyCard property={property} />)}
+      {results?.map(property => <PropertyCard key={property.property_id} property={property} />)}
     </div>
   )
 };
