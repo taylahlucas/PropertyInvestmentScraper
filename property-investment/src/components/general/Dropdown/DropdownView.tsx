@@ -1,4 +1,4 @@
-import styles from '@/styles/General.module.css';
+import styles from '@/styles/DashboardHeader.module.css';
 import Condition from '@/components/general/Condition';
 
 interface DropdownViewProps {

@@ -1,5 +1,5 @@
 
-import styles from '@/styles/General.module.css';
+import styles from '@/styles/DashboardHeader.module.css';
 import { useState } from 'react';
 import CustomSearchBar from '../../../general/CustomSearchBar/CustomSearchBar';
 import { filterSearchData, searchAddressData } from '../../../../data/functions';

@@ -1,4 +1,5 @@
 import styles from '@/styles/PropertyView.module.css';
+import generalStyles from '@/styles/General.module.css';
 import { LocationData } from '@/utils/interfaces';
 
 interface PropertyLocationsProps {
@@ -8,16 +9,16 @@ interface PropertyLocationsProps {
 
 const PropertyLocations = ({ header, locations }: PropertyLocationsProps) => {
   return (
-    <div className={styles.locationsContainer}>
-      <div className={styles.locationsHeader}>{header}</div>
-      <ul>
+    <div>
+      <div className={`${generalStyles.titleSmall} ${styles.locationsHeader}`}>{header}</div>
+      <ul className={styles.locationsContainer}>
         {Object.values(locations).map((item: LocationData, index: number) => {
           return <li 
             key={index} 
             className={styles.locationsList}
           >
-            <div className={styles.locationRow}>{item.name}</div>
-            <div className={styles.locationDistance}>{item.distance}</div>
+            <div className={`${generalStyles.textSmall} ${styles.locationRow}`}>{item.name}</div>
+            <div className={`${generalStyles.textSmall} ${generalStyles.paddingLeftMed}`}>{item.distance}</div>
           </li>
         })}
       </ul>

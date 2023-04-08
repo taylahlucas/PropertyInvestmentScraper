@@ -1,4 +1,4 @@
-import styles from '@/styles/General.module.css';
+import styles from '@/styles/DashboardHeader.module.css';
 import { IconButton, TextField } from "@mui/material";
 import CancelIcon from '@mui/icons-material/Cancel'
 import SearchDropdownView from './CustomSearchDropdownView';

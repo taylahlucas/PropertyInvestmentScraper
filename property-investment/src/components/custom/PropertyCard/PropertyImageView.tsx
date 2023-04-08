@@ -7,8 +7,8 @@ interface PropertyImageView {
 const PropertyImageView = ({ images }: PropertyImageView) => {
   return (
     <div className={styles.imageContainer}>
-      {images.map((image) => (
-        <img src={image} />
+      {images.map((image, index) => (
+        <img key={index} src={image} />
       ))}
     </div>
   );

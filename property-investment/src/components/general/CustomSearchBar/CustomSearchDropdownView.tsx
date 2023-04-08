@@ -1,4 +1,4 @@
-import styles from '@/styles/General.module.css'
+import styles from '@/styles/DashboardHeader.module.css'
 import { useEffect, useState } from "react";
 import { ListItem } from "@mui/material";
 import Condition from "../Condition";

@@ -1,4 +1,4 @@
-import styles from '@/styles/General.module.css';
+import styles from '@/styles/DashboardHeader.module.css';
 import { useState } from 'react';
 import { FormGroup, TextField, InputAdornment } from "@mui/material";
 import { SearchFormData, PropertyItem, RentPriceData, PriceHistoryData } from '@/utils/interfaces';

@@ -1,4 +1,4 @@
-import styles from '@/styles/General.module.css';
+import styles from '@/styles/DashboardHeader.module.css';
 
 interface DropdownProps {
   header: any;

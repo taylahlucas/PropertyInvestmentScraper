@@ -1,12 +1,12 @@
 import styles from '@/styles/PropertyView.module.css';
 import { useState } from 'react';
 import { PropertyItem } from '@/utils/interfaces';
-import PropertyImageView from './PropertyImageView';
 import PropertyDetails from './PropertyDetails';
+import PropertyExtraDetails from './PropertyExtraDetails';
 import Dropdown from '@/components/general/Dropdown/Dropdown';
 import ClickableView from '@/components/general/ClickableView';
 
-interface PropertyCardProps {
+export interface PropertyCardProps {
   property: PropertyItem;
 }
 
@@ -20,14 +20,11 @@ const PropertyCard = ({ property }: PropertyCardProps) => {
           className={styles.propertyCardContainer}
           onClick={(): void => setDetailsOpen(!detailsOpen)}
         >
-          <div className={styles.contentContainer}>
-            <PropertyImageView images={property.images} />
-            <div className={styles.price}>{property.price}</div>
-          </div>
+          <PropertyDetails property={property} />
         </ClickableView>
       }
       view={
-        <PropertyDetails
+        <PropertyExtraDetails
           open={detailsOpen}
           property={property}
         />

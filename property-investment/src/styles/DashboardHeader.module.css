@@ -1,0 +1,80 @@
+.headerContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.header {
+  margin-left: 100px;
+  right: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #2B2234;
+}
+
+.searchBarContainer {
+  display: flex;
+  margin-left: 100px;
+}
+
+.searchBar {
+  background-color: white;
+  margin: 10px;
+  padding-left: 20px;
+}
+
+.searchBarField {
+  border-radius: 2;
+  width: 400
+}
+
+.searchDropDown {
+  background-color: white;
+  max-height: 300px;
+  min-width: 200px;
+  max-width: 400px;
+  position: absolute;
+  overflow: scroll;
+  z-index: 3;
+  border-radius: 2%;
+  margin-left: 10px;
+  margin-top: -8px;
+}
+
+.searchListItem {
+  padding: 10;
+  font-size: 12;
+}
+
+.dropdownHeader {
+  cursor: pointer;
+  padding: 8px;
+  min-width: 150px;
+  text-align: center;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.headerFilterContainer {
+  display: flex;
+  position: absolute;
+  background-color: #E6E9F0;
+  width: 300px;
+  height: 300px;
+  z-index: 3;
+  border-radius: 2%;
+  margin-top: 4px;
+}
+
+.formGroup {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

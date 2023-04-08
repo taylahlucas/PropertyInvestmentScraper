@@ -7,22 +7,20 @@
 
 .propertyCardContainer {
   background-color: white;
-  display: flex;
-  flex-direction: row;
   width: 600px;
   height: 200px;
   border-radius: 2ch;
   margin-top: 10px;
 }
 
-.contentContainer {
+.imagePriceContainer {
   margin-left: 20px;
   padding-top: 15px;
+  width: 250px;
 }
 
 .imageContainer {
   display: flex;
-  flex-direction: row;
   width: 210px;
   height: 140px;
   overflow-x: scroll;
@@ -31,16 +29,27 @@
 
 .price {
   padding: 10px;
-  font-weight: bold;
+  margin-right: 40px
+}
+
+.propertyDetails {
+  padding: 15px;
+  width: 350px;
+}
+
+.propertyInfo {
+  height: 70px;
+}
+
+.propertyLink {
+  bottom: 10px;
 }
 
 .dropdownContainer {
   background-color: white;
-  width: 600px;
+  width: 550px;
   height: 300px;
   border-radius: 1ch;
-  /* overflow: hidden;
-  overflow-y: scroll; */
 }
 
 .detailsContainer {
@@ -51,7 +60,6 @@
 }
 
 .details {
-  font-weight: 300;
   border-bottom: 1px solid rgb(212, 212, 212);
   padding: 5px;
   list-style-type: none;
@@ -69,10 +77,10 @@
 .locationsContainer {
   overflow: hidden;
   overflow-y: scroll;
+  height: 80px;
 }
 
 .locationsHeader {
-  font-weight: 600;
   position: sticky;
 }
 
@@ -87,9 +95,5 @@
 .locationRow {
   text-align: center; 
   font-weight: 200; 
-  width: 200px;
-}
-
-.locationDistance {
-  padding-left: 20px;
+  width: 180px;
 }
