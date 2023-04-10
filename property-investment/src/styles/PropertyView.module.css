@@ -38,11 +38,12 @@
 }
 
 .propertyInfo {
-  height: 70px;
+  height: 50px;
 }
 
-.propertyLink {
-  bottom: 10px;
+.propertyInfoCol {
+  flex: 1;
+  height: 80px;
 }
 
 .dropdownContainer {
@@ -70,7 +71,7 @@
   flex: 1;
   flex-direction: row;
   justify-content: center;
-  padding-right: 20px;
+  margin-right: 40px;
   height: 120px;
 }
 

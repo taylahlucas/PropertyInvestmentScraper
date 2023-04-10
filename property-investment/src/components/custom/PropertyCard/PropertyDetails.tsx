@@ -6,6 +6,7 @@ import Gap from '@/components/general/Gap';
 import Row from '@/components/general/StyledComponents/Row';
 import PropertyBedBaths from './PropertyBedBaths';
 import PropertyInfo from './PropertyInfo';
+import Column from '@/components/general/StyledComponents/Column';
 
 const PropertyDetails = ({ property }: PropertyCardProps) => {
   return (
@@ -19,14 +20,15 @@ const PropertyDetails = ({ property }: PropertyCardProps) => {
         <Gap />
         <div className={generalStyles.header}>{property.address}</div>
         <Gap height={10} />
-        <Row customStyle={generalStyles.centerContent}>
-          <div className={generalStyles.description}>{property.description.replace('house for sale', '')}</div>
+        <Row customStyle={generalStyles.spaceBetween}>
           <PropertyBedBaths beds={property.no_beds} baths={property.no_baths} />
+          <div className={`${generalStyles.description} ${generalStyles.centerContent}`}>{property.description.replace('house for sale', '')}</div>
         </Row>
-        <Gap height={5} />
         {/* // TODO: Function to detect if chain-free is present in extra_details */}
-        <PropertyInfo tenure={property.tenure} daysOtm={property.days_otm} />
-        <a href={property.href} className={`${generalStyles.textSmall} ${styles.propertyLink}`}>View property listing</a>
+        <Column customStyle={styles.propertyInfoCol}>
+          <PropertyInfo tenure={property.tenure} daysOtm={property.days_otm} />
+          <a href={property.href} className={generalStyles.textSmall}>View property listing</a>
+        </Column>
       </div>
     </Row>
   );

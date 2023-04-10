@@ -2,6 +2,7 @@ import generalStyles from '@/styles/General.module.css';
 import BedOutlinedIcon from '@mui/icons-material/BedOutlined';
 import BathtubOutlinedIcon from '@mui/icons-material/BathtubOutlined';
 import Row from '@/components/general/StyledComponents/Row';
+import Column from '@/components/general/StyledComponents/Column';
 
 interface PropertyBedBathsProps {
   beds: string;
@@ -10,16 +11,16 @@ interface PropertyBedBathsProps {
 
 const PropertyBedBaths = ({ beds, baths }: PropertyBedBathsProps) => {
   return (
-    <Row customStyle={generalStyles.paddingLeftSmall}>
+    <Column customStyle={generalStyles.paddingSidesSmall}>
       <Row>
         <BedOutlinedIcon style={{ color: '#B9BEC6', fontSize: 20 }} />
-        <div className={`${generalStyles.paddingLeftMed} ${generalStyles.textSmall}`}>{beds}</div>
+        <div className={`${generalStyles.paddingLeftSmall} ${generalStyles.textSmall}`}>{beds}</div>
       </Row>
-      <Row customStyle={generalStyles.paddingLeftSmall}>
+      <Row>
         <BathtubOutlinedIcon style={{ color: '#B9BEC6', fontSize: 20 }} />
         <div className={`${generalStyles.paddingLeftSmall} ${generalStyles.textSmall}`}>{baths}</div>
       </Row>
-    </Row>
+    </Column>
   );
 };
 

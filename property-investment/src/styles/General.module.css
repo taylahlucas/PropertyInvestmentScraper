@@ -9,13 +9,18 @@
 }
 
 .centerContent {  
+  flex: 1;
   justify-content: center;
   align-items: center;
 }
 
 .paddingTopSmall { padding-top: 10px; }
 .paddingLeftSmall { padding-left: 10px; }
-.paddingLeftMed { padding-left: 14px; }
+.paddingLeftMed { padding-left: 20px; }
+
+.test {
+  background-color: red;
+}
 
 .header {
   font-weight: 800;
