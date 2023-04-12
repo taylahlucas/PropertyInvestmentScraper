@@ -24,7 +24,7 @@ const SearchResultsSubRow = ({ isOpen = false, row }: SearchResultsSubRowProps) 
         maxWidth: MAX_DESCRIPTION_WIDTH,
         overflow: 'hidden'
       }}>
-        {extra_details.map((detail, index) => 
+        {extra_details.map((detail: string, index: number) => 
           <li key={index} style={{ fontWeight: 300 }}>{detail}</li>
         )}
       </ul>
@@ -58,7 +58,7 @@ const SearchResultsSubRow = ({ isOpen = false, row }: SearchResultsSubRowProps) 
                 overflowX: 'scroll'
               }}
             >
-              {row.images.map((image) => (
+              {row.images.map((image: string) => (
                 <img key={image} style={{ paddingRight: 10 }} src={image}/>
               ))}
             </TableCell>

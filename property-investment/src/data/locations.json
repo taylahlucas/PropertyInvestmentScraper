@@ -639,5 +639,53 @@
         ]
       }
     ]
+  },
+  {    
+    "area": "Bristol",
+    "cities": [
+      { 
+        "name": "",
+        "towns": [
+          "Ashley Down",
+          "Ashton",
+          "Avonmouth",
+          "Bedminster",
+          "Bishopston",
+          "Bishopsworth",
+          "Brislington",
+          "Clifton",
+          "Cotham",
+          "Easton",
+          "Filton",
+          "Fishponds",
+          "Hanham",
+          "Henbury",
+          "Hengrove",
+          "Henleaze",
+          "Horfield",
+          "Hotwells",
+          "Kingsdown",
+          "Knowle",
+          "Lawrence Hill",
+          "Lockleaze",
+          "Montpelier",
+          "Redland",
+          "Sea Mills",
+          "Shirehampton",
+          "Sneyd Park",
+          "Southmead",
+          "Southville",
+          "St. Andrews",
+          "St. Anne's",
+          "St. George",
+          "St. Pauls",
+          "Stoke Bishop",
+          "Totterdown",
+          "Westbury-on-Trym",
+          "Whitchurch",
+          "Windmill Hill"
+        ]
+      }
+    ]
   }
 ]

@@ -1,14 +1,16 @@
+import axios from 'axios';
 import locations from './locations.json';
-import { CitiesProps, LocationsProps, SearchFormData, Order, PropertyItem, RentPriceDataHeader } from '../utils/interfaces';
+import { CitiesProps, LocationsProps, SearchFormData, Order, PropertyItem, RentPriceDataHeader, AddressCoordinates } from '../utils/interfaces';
 
 export const generateAddresses = () => {
   const addresses: string[] = [];
-  
   locations.map(({ area, cities }: LocationsProps) => {
     cities.map(({ name, towns }: CitiesProps) => {
       towns.map(town => {
         addresses.push(
-          `${town}, ${name}, ${area}`
+          name.length > 0 
+            ? `${town}, ${name}, ${area}`
+            : `${town}, ${area}`
         )
       })
     });
@@ -17,6 +19,39 @@ export const generateAddresses = () => {
 };
 
 export const searchAddressData = generateAddresses();
+
+// TODO: Hide this
+const apiKey = "AIzaSyD7ZdX3iwm2kn31nX_Wumdazj2iMyfv78U"
+
+export const calculateLatLng = async (addresses: string[]) => {
+  const coordinates: AddressCoordinates[] = []
+  addresses.forEach(async (address: string, index: number) => {
+    try {
+      const response = await axios.get(
+        `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(
+          address
+        )}&key=${apiKey}`
+      );
+
+      if (response.data.results.length > 0) {
+        const location = response.data.results[0].geometry.location;
+        coordinates.push({
+          id: index.toString(),
+          address: address,
+          position: {
+            lat: parseFloat(location.lat),
+            lng: parseFloat(location.lng)
+          }
+        })
+      } else {
+        alert("No results found for this address.");
+      }
+    } catch (error) {
+      alert("An error occurred while fetching the coordinates.");
+    }
+  });
+  return coordinates
+}
 
 export const filterSearchData = (query: string, data: string[]) => {
   if (query.length < 3) {

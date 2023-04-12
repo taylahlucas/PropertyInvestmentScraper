@@ -24,10 +24,10 @@ class PropertySpider(scrapy.Spider):
     def __init__(self, *args, **kwargs):
         self.params = json.loads(sys.argv[1])
         self.url = 'https://www.onthemarket.com/for-sale/' \
-                   + str(self.params['noBeds']) \
-                   + '-bed-property/' + str(self.params['address']).lower() \
-                   + '/?max-price=' + str(self.params['price']) + \
-                   '&retirement=false&shared-ownership=false&view=grid'
+            + str(self.params['noBeds']) \
+            + '-bed-property/' + str(self.params['address']).lower() \
+            + '/?max-price=' + str(self.params['price']) + \
+            '&retirement=false&shared-ownership=false&view=grid'
         super().__init__(*args, **kwargs)
 
     def start_requests(self):

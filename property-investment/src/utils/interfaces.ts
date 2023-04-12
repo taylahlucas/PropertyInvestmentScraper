@@ -78,3 +78,12 @@ export interface PriceHistoryData {
 }
 
 export type Order = 'asc' | 'desc';
+
+export interface AddressCoordinates {
+  id: string;
+  address: string;
+  position: {
+    lat: number;
+    lng: number;
+  }
+}
