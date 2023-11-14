@@ -1,4 +1,8 @@
 # PropertyInvestmentScraper
+#### 12th March 2023
+
+A property investment search which allows users to filter by various values.
+Built using React and TypeScript.
 
 ## Deploy
 
