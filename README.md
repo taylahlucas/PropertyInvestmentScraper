@@ -49,18 +49,18 @@ Create venv:
 
 ## Folder Structure
 
-/backend - Backend scrapers which provide property and rental price data
-  /scrapers - Individual data scrapers.
-/src - Frontend application
-  /components
-    /custom - Custom components.
-    /general - Resuable components.
-    /layouts - Reusable layouts.
-  /data - Data functions and mock data.
-  /pages - App screens.
-  /server - Backend to frontend integration.
-  /styles - General styles.
-  /utils - Constants, enums, types & interfaces.
+- /backend - Backend scrapers which provide property and rental price data
+  - /scrapers - Individual data scrapers.
+- /src - Frontend application
+  - /components
+    - /custom - Custom components.
+    - /general - Resuable components.
+    - /layouts - Reusable layouts.
+  - /data - Data functions and mock data.
+  - /pages - App screens.
+  - /server - Backend to frontend integration.
+  - /styles - General styles.
+  - /utils - Constants, enums, types & interfaces.
 
 ## References:
 
