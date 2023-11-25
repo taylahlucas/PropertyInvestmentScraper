@@ -28,7 +28,7 @@ export const filterSearchData = (query: string, data: string[]) => {
 };
 
 export const convertPriceToNumber = (price: string): number => {
-  return Number(price.replace('.', '').replace(',', '')) ?? 0
+  return Number(price.replace('£', '').replace('.', '').replace(',', '')) ?? 0
 };
 
 export const formDataIsValid = (formData: SearchFormData): boolean => {

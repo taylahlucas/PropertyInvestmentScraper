@@ -63,6 +63,15 @@ export interface RentPriceData {
   current_date: string;
 }
 
+export interface RentPriceComparison {
+  address: string;
+  price: string;
+  noBeds: number;
+  noBaths: number;
+  propType: PropertyType;
+  timeOTM: string;
+}
+
 export interface SearchFormData {
   address?: string;
   price?: number;
@@ -78,3 +87,27 @@ export interface PriceHistoryData {
 }
 
 export type Order = 'asc' | 'desc';
+
+export enum PropertyTypeEnum {
+  'Detached House' = 'Detached House',
+  'Semi-Detached House' = 'Semi-Detached House',
+  'Terraced House' = 'Terraced House',
+  'Bungalow' = 'Bungalow',
+  'Apartment' = 'Apartment',
+  'Flat' = 'Flat',
+  'Maisonette' = 'Maisonette',
+  'Duplex' = 'Duplex',
+  'Cottage' = 'Cottage',
+  'Mews House' = 'Mews House',
+}
+
+type PropertyType = 'Detached House'
+  | 'Semi-Detached House'
+  | 'Terraced House'
+  | 'Bungalow'
+  | 'Apartment'
+  | 'Flat'
+  | 'Maisonette'
+  | 'Duplex'
+  | 'Cottage'
+  | 'Mews House'

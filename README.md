@@ -18,6 +18,7 @@
   - @emotion/react
   - @emotion/styled
   - @mui/icons-material
+  - react-chartjs-2 chart.js
   <!-- - react-number-format -->
   - axios
   - react-router-dom
