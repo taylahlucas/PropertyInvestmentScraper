@@ -1,15 +1,15 @@
-import Header from '../general/Header';
+import Header from '../Header';
 
 interface LayoutProps {
-  headerChildren: any;
+  header: any;
   children?: any;
 }
 
-const Layout = ({ headerChildren, children }: LayoutProps) => {
+const Layout = ({ header, children }: LayoutProps) => {
   return (
     <>
       <Header>
-        {headerChildren}
+        {header}
       </Header>
       {children}
     </>  

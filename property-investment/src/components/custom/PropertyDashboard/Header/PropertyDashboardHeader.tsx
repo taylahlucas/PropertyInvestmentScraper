@@ -8,7 +8,6 @@ import HeaderFilter from './HeaderFilter';
 
 const PropertyDashboardHeader = () => {
   const [searchValue, setSearchValue] = useState('')
-  const [filterOpen, setFilterOpen] = useState(false);
   const searchBarData = filterSearchData(searchValue, searchAddressData)
   const [formData, setFormData] = useState<SearchFormData>({
     noBeds: 1,
