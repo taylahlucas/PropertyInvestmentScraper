@@ -2,11 +2,11 @@ import { useEffect, useState } from 'react';
 import StartPage from '../StartPage';
 import SearchMenu from "../SearchMenu";
 import SearchResults from '../SearchResults/SearchResults';
-import PriceInformationView from "../custom_old/PriceInformationView/PriceInformationView";
+import PriceInformationView from "../../custom_old/PriceInformationView/PriceInformationView";
 // import SavedResults from "../SavedResults";
-import { PriceHistoryData, PropertyItem, RentPriceData } from '../../utils/interfaces';
+import { PriceHistoryData, PropertyItem, RentPriceData } from '../../../utils/interfaces';
 import Condition
-from '../general/Condition';
+from '../Condition';
 
 const Layout = (): JSX.Element => {
   const [showStartPage, setShowStartPage] = useState(true);
