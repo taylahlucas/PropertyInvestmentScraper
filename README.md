@@ -1,13 +1,11 @@
 # PropertyInvestmentScraper
 #### 12th March 2023
 
-A property investment search which allows users to filter by various values.
-Built using React and TypeScript.
-
-#### 12th March 2023
-
 An application which searches for properties in the United Kingdom with a set of filters.
 Allows for searching Freehold properties only.
+Built using React & TypeScript.
+
+https://github.com/taylahlucas/PropertyInvestmentScraper/assets/53559103/9b361f4a-701c-4028-9b9f-ed30ab89abfc
 
 ## Deploy
 
