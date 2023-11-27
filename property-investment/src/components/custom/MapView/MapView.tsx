@@ -5,7 +5,7 @@ import { calculateLatLng } from '../../../data/functions';
 import { AddressCoordinates } from '../../../utils/interfaces';
 
 // TODO: Hide this
-const apiKey = "AIzaSyD7ZdX3iwm2kn31nX_Wumdazj2iMyfv78U"
+const apiKey = ''
 
 const containerStyle = {
   width: '500px',
