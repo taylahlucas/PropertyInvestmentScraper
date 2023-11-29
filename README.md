@@ -38,13 +38,13 @@ https://github.com/taylahlucas/PropertyInvestmentScraper/assets/53559103/9b361f4
 Create venv:
   - python3 -m venv venv
 
-- pip install scrapy
-- pip install requests
-- pip install beautifulsoup4
-- pip install scrapy-useragents
-- pip install fake-useragent
-- pip install user-agents
-- pip install pymongo
+- pip3 install scrapy
+- pip3 install requests
+- pip3 install beautifulsoup4
+- pip3 install scrapy-useragents
+- pip3 install fake-useragent
+- pip3 install user-agents
+- pip3 install pymongo
 - npm install express mongodb body-parser --save
 
 ## Folder Structure
